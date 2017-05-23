@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Check this out!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="book_genre_array">
+        <item>Biografia</item>
+        <item>Dramat</item>
+        <item>Fantastyka</item>
+        <item>Historyczna</item>
+        <item>Horror</item>
+        <item>Kryminał</item>
+        <item>Literatura piękna</item>
+        <item>Naukowa</item>
+        <item>Poradnik</item>
+        <item>Przygodowa</item>
+        <item>Science-fiction</item>
+        <item>Sensacyjna</item>
+        <item>Inne</item>
+    </string-array>
+    <string-array name="movie_genre_array">
+        <item>Akcja</item>
+        <item>Anime</item>
+        <item>Animowany</item>
+        <item>Biograficzny</item>
+        <item>Czarna komedia</item>
+        <item>Dramat</item>
+        <item>Fabularny</item>
+        <item>Familijny</item>
+        <item>Fantasy</item>
+        <item>Historyczny</item>
+        <item>Horror</item>
+        <item>Komedia</item>
+        <item>Musical</item>
+        <item>Science-fiction</item>
+        <item>Serial</item>
+        <item>Spaghetti Western</item>
+        <item>Tragedia</item>
+        <item>Western</item>
+        <item>inne</item>
+    </string-array>
+    <string-array name="movie_lang_array">
+        <item>angielski</item>
+        <item>francuski</item>
+        <item>grecki</item>
+        <item>hiszpański</item>
+        <item>irański</item>
+        <item>polski</item>
+        <item>rosyjski</item>
+        <item>włoski</item>
+        <item>inne</item>
+    </string-array>
+
+</resources>
