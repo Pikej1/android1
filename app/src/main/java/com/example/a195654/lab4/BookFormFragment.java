@@ -99,6 +99,9 @@ public class BookFormFragment extends Fragment implements AdapterView.OnItemSele
                     book.setTitle(title.getText().toString());
                     book.setAuthor(author.getText().toString());
 
+                    title.setText("");
+                    author.setText("");
+
                     ArrayList<Book> list = new ArrayList<>();
                     File file = new File(getContext().getFilesDir(), "books.txt");
                     ObjectInputStream in = null;

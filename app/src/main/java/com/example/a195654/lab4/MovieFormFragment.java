@@ -101,6 +101,8 @@ public class MovieFormFragment extends Fragment implements AdapterView.OnItemSel
                     movie.setTitle(title.getText().toString());
                     movie.setDirector(director.getText().toString());
 
+                    title.setText("");
+                    director.setText("");
 
                     ArrayList<Movie> list = new ArrayList<>();
                     File file = new File(getContext().getFilesDir(), "movies.txt");

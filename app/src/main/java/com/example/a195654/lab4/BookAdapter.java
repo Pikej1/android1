@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -12,12 +13,12 @@ import java.util.ArrayList;
  * Created by PiET on 2017-05-23.
  */
 
-public class myAdapter extends BaseAdapter{
+public class BookAdapter extends BaseAdapter{
 
-    private ArrayList<Movie> list;
     private LayoutInflater inflater;
+    private ArrayList<Book> list;
 
-    public myAdapter(Context context, ArrayList<Movie> list){
+    public BookAdapter(Context context, ArrayList<Book> list){
         this.list = list;
         inflater = LayoutInflater.from(context);
     }
@@ -39,6 +40,14 @@ public class myAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        //Get view for row item
+        View rowView = inflater.inflate(R.layout.book_item, parent, false);
+
+        TextView textView = (TextView) rowView.findViewById(R.id.book_item_title);
+
+        Book book = (Book) getItem(position);
+        textView.setText(book.getTitle());
+
+        return rowView;
     }
 }

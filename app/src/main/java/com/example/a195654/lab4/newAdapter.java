@@ -31,12 +31,6 @@ public class newAdapter extends ArrayAdapter<Movie> {
             view = inflater.inflate(R.layout.fragment_movie_list, null);
         }
         Movie movie = list.get(position);
-        if (movie != null){
-            TextView title = (TextView) view.findViewById(R.id.movie_title);
-            if(title != null){
-                title.setText(movie.getTitle());
-            }
-        }
         return view;
     }
 }
